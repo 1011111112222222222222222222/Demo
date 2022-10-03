@@ -1,0 +1,9 @@
+﻿@using EF.Models
+@model List<Product>
+<ul class="nav flex-column">
+    @foreach(var s in Model)
+    {
+        <li class="nav-item border">@Html.ActionLink(@s.Productname, "hienthitheocd", "Demo",new { id=@s.Id},new { @class="nav-link"})</li>
+    }
+</ul>
+

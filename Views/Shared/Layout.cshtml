@@ -1,0 +1,18 @@
+﻿    
+@{
+    ViewBag.Title = "Layout";
+}
+<link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+<link href="~/Content/css/tri.css" rel="stylesheet" />
+<div class="container-fluid">
+    <div class="row" >
+        <div class="col-md-3">
+            <h1 class="bg-success">Danh sách loại chủ đề</h1>
+             @Html.Action("chude","Demo")
+
+        </div>
+        <div class="col-md-9">
+            @RenderBody()
+        </div>
+    </div>
+</div>
